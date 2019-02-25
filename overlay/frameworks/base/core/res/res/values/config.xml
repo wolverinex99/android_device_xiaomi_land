@@ -372,5 +372,8 @@
          proximity sensor (ideally < 300ms) -->
     <bool name="config_proximityCheckOnWake">false</bool>
 
+    <!-- Whether device ignores the RSSNR signal implementation -->
+    <bool name="config_ignoreRssnrSignalLevel">true</bool>
+
 </resources> 
 
