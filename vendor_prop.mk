@@ -90,14 +90,31 @@ debug.mdpcomp.logs=0 \
 dev.pm.dyn_samplingrate=1 \
 persist.demo.hdmirotationlock=false \
 debug.enable.sglscale=1 \
-sdm.debug.disable_skip_validate=1 \
 debug.sf.recomputecrop=0 \
-ro.opengles.version=196610 \
-ro.qualcomm.cabl=0 \
-ro.qualcomm.svi=0 \
-ro.sf.lcd_density=280 \
+sdm.debug.disable_skip_validate=1 \
+vendor.display.disable_skip_validate=1 \
 persist.debug.wfd.enable=1 \
-persist.hwc.enable_vds=1
+persist.hwc.enable_vds=1 \
+debug.hwui.use_buffer_age=false \
+debug.sdm.support_writeback=0
+
+# Property to enable display default color mode
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.display.enable_default_color_mode=1
+
+# Dalvik
+PRODUCT_PROPERTY_OVERRIDES += \
+dalvik.vm.heapgrowthlimit=192m \
+dalvik.vm.heapmaxfree=8m \
+dalvik.vm.heapminfree=4m \
+dalvik.vm.heapsize=512m \
+dalvik.vm.heapstartsize=16m \
+dalvik.vm.heaptargetutilization=0.75 \
+dalvik.vm.boot-dex2oat-threads=8 \
+dalvik.vm.dex2oat-threads=4 \
+dalvik.vm.image-dex2oat-threads=4 \
+dalvik.vm.dex2oat-filter=speed \
+dalvik.vm.image-dex2oat-filter=speed
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
