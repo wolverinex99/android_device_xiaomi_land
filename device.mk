@@ -364,6 +364,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     telephony-ext \
+    ims-ext-common
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Sensors
 PRODUCT_PACKAGES += \
