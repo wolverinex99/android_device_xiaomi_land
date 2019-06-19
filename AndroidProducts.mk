@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_land.mk
+    $(LOCAL_DIR)/descendant_land.mk
