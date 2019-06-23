@@ -548,4 +548,5 @@
     
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
+<integer name="config_deviceHardwareKeys">83</integer>
 </resources>
