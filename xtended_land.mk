@@ -33,7 +33,7 @@ $(call inherit-product, $(DEVICE_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := land
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosip_land
+PRODUCT_NAME := xtended_land
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
